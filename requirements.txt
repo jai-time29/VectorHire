@@ -1,0 +1,41 @@
+# --- PyTorch CPU wheels (picks the +cpu build on Linux/Windows; plain wheel on macOS) ---
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.4
+pydantic-settings==2.7.0
+email-validator==2.2.0
+
+# --- Auth ---
+PyJWT==2.10.1
+bcrypt==4.2.1
+
+# --- Database (native async API, replaces deprecated Motor) ---
+pymongo==4.13.2
+
+# --- PDF + OCR ---
+PyMuPDF==1.25.1
+pytesseract==0.3.13
+Pillow==11.1.0
+
+# --- Embeddings + vector search ---
+numpy==1.26.4
+torch==2.5.1
+transformers==4.47.1
+sentence-transformers==3.3.1
+faiss-cpu==1.9.0.post1
+
+# --- LLM orchestration ---
+langchain==0.3.14
+langchain-core==0.3.29
+langchain-text-splitters==0.3.5
+langchain-openai==0.3.0
+langchain-anthropic==0.3.1
+langgraph==0.2.60
+
+# --- Utilities ---
+python-dotenv==1.0.1
+tenacity==9.0.0
